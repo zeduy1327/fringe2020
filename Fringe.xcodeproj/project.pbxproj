@@ -1,0 +1,822 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7D7F3ACB3BB289F6CFBBD2BB /* Pods_Fringe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A4E63FFAAB041B9B43C64C4 /* Pods_Fringe.framework */; };
+		BD5F7D4D2551C8E4006E4DE8 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5F7D4C2551C8E4006E4DE8 /* Network.swift */; };
+		BD621CD525484021008B62A9 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD621CD425484021008B62A9 /* Global.swift */; };
+		BDC05D3A2557ADF7006C651B /* FringeEventListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC05D392557ADF7006C651B /* FringeEventListController.swift */; };
+		BDC05D4D2557B98E006C651B /* FringeEventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC05D4C2557B98E006C651B /* FringeEventCell.swift */; };
+		BDC05D522557B9E9006C651B /* FringeEventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC05D512557B9E9006C651B /* FringeEventModel.swift */; };
+		BDC05D562557BB0C006C651B /* FringeEventItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC05D552557BB0C006C651B /* FringeEventItem.swift */; };
+		BDC05D592557C590006C651B /* FringeEventDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC05D582557C590006C651B /* FringeEventDetailController.swift */; };
+		BDC05D692557DDD7006C651B /* BrowseFringeEventsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC05D682557DDD7006C651B /* BrowseFringeEventsController.swift */; };
+		BDC05DB92557E6A0006C651B /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC05D9D2557E6A0006C651B /* Animator.swift */; };
+		BDC05DBA2557E6A0006C651B /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC05D9E2557E6A0006C651B /* Array+Extensions.swift */; };
+		BDC05DBB2557E6A0006C651B /* CGPoint+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC05D9F2557E6A0006C651B /* CGPoint+Extensions.swift */; };
+		BDC05DBC2557E6A0006C651B /* CGVector+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC05DA02557E6A0006C651B /* CGVector+Extensions.swift */; };
+		BDC05DBD2557E6A0006C651B /* PanGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC05DA12557E6A0006C651B /* PanGestureRecognizer.swift */; };
+		BDC05DBE2557E6A0006C651B /* StringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC05DA22557E6A0006C651B /* StringUtils.swift */; };
+		BDC05DBF2557E6A0006C651B /* TapGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC05DA32557E6A0006C651B /* TapGestureRecognizer.swift */; };
+		BDC05DC02557E6A0006C651B /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC05DA42557E6A0006C651B /* UIView+Extensions.swift */; };
+		BDC05DC12557E6A0006C651B /* CardAnimationOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC05DA62557E6A0006C651B /* CardAnimationOptions.swift */; };
+		BDC05DC22557E6A0006C651B /* CardAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC05DA72557E6A0006C651B /* CardAnimator.swift */; };
+		BDC05DC32557E6A0006C651B /* CardLayoutProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC05DA82557E6A0006C651B /* CardLayoutProvider.swift */; };
+		BDC05DC42557E6A0006C651B /* CardTransformProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC05DA92557E6A0006C651B /* CardTransformProvider.swift */; };
+		BDC05DC52557E6A0006C651B /* SwipeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC05DAA2557E6A0006C651B /* SwipeCard.swift */; };
+		BDC05DC62557E6A0006C651B /* SwipeCardDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC05DAB2557E6A0006C651B /* SwipeCardDelegate.swift */; };
+		BDC05DC72557E6A0006C651B /* SwipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC05DAC2557E6A0006C651B /* SwipeView.swift */; };
+		BDC05DC82557E6A0006C651B /* CardStackAnimationOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC05DAE2557E6A0006C651B /* CardStackAnimationOptions.swift */; };
+		BDC05DC92557E6A0006C651B /* CardStackAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC05DAF2557E6A0006C651B /* CardStackAnimator.swift */; };
+		BDC05DCA2557E6A0006C651B /* CardStackLayoutProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC05DB02557E6A0006C651B /* CardStackLayoutProvider.swift */; };
+		BDC05DCB2557E6A0006C651B /* CardStackStateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC05DB12557E6A0006C651B /* CardStackStateManager.swift */; };
+		BDC05DCC2557E6A0006C651B /* CardStackTransformProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC05DB22557E6A0006C651B /* CardStackTransformProvider.swift */; };
+		BDC05DCD2557E6A0006C651B /* SwipeCardStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC05DB32557E6A0006C651B /* SwipeCardStack.swift */; };
+		BDC05DCE2557E6A0006C651B /* SwipeCardStackDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC05DB42557E6A0006C651B /* SwipeCardStackDataSource.swift */; };
+		BDC05DCF2557E6A0006C651B /* SwipeCardStackDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC05DB52557E6A0006C651B /* SwipeCardStackDelegate.swift */; };
+		BDC05DD02557E6A0006C651B /* SwipeDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC05DB62557E6A0006C651B /* SwipeDirection.swift */; };
+		BDC05DD12557E6A0006C651B /* Shuffle.plist in Resources */ = {isa = PBXBuildFile; fileRef = BDC05DB82557E6A0006C651B /* Shuffle.plist */; };
+		BDC05DDE2557E6DC006C651B /* ButtonStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC05DD42557E6DC006C651B /* ButtonStackView.swift */; };
+		BDC05DDF2557E6DC006C651B /* UIView1+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC05DD62557E6DC006C651B /* UIView1+Extensions.swift */; };
+		BDC05DE02557E6DC006C651B /* TinderCardContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC05DD82557E6DC006C651B /* TinderCardContentView.swift */; };
+		BDC05DE12557E6DC006C651B /* TinderCardFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC05DD92557E6DC006C651B /* TinderCardFooterView.swift */; };
+		BDC05DE22557E6DC006C651B /* TinderCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC05DDA2557E6DC006C651B /* TinderCardModel.swift */; };
+		BDC05DE32557E6DC006C651B /* TinderCardOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC05DDB2557E6DC006C651B /* TinderCardOverlay.swift */; };
+		BDC05DE52557E6DC006C651B /* TinderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC05DDD2557E6DC006C651B /* TinderButton.swift */; };
+		BDC05DEA2557EAA6006C651B /* TinderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC05DE92557EAA6006C651B /* TinderViewController.swift */; };
+		BDC05DEF2557F6D2006C651B /* AboutusController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC05DEE2557F6D2006C651B /* AboutusController.swift */; };
+		BDC05DF92557F7A2006C651B /* VenuesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC05DF82557F7A2006C651B /* VenuesController.swift */; };
+		BDC05DFE2557F879006C651B /* VenuesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC05DFD2557F879006C651B /* VenuesModel.swift */; };
+		BDC05E022557F8AC006C651B /* VenuesItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC05E012557F8AC006C651B /* VenuesItem.swift */; };
+		BDC05E1625581066006C651B /* CopywriteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC05E1525581066006C651B /* CopywriteController.swift */; };
+		BDC7E1552545FEF900A268A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC7E1542545FEF900A268A0 /* AppDelegate.swift */; };
+		BDC7E1592545FEF900A268A0 /* SplashController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC7E1582545FEF900A268A0 /* SplashController.swift */; };
+		BDC7E15C2545FEF900A268A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDC7E15A2545FEF900A268A0 /* Main.storyboard */; };
+		BDC7E15E2545FF0600A268A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDC7E15D2545FF0600A268A0 /* Assets.xcassets */; };
+		BDC7E1612545FF0600A268A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDC7E15F2545FF0600A268A0 /* LaunchScreen.storyboard */; };
+		BDC7E16C2546AB3200A268A0 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC7E16B2546AB3200A268A0 /* HomeController.swift */; };
+		BDC7E16E2546AB5200A268A0 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC7E16D2546AB5200A268A0 /* BaseViewController.swift */; };
+		BDC7E1772546BCF500A268A0 /* UIViewController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC7E1762546BCF500A268A0 /* UIViewController+extension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2A4E63FFAAB041B9B43C64C4 /* Pods_Fringe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fringe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		40AC3CBE1C25A823EEA5FD47 /* Pods-Fringe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fringe.release.xcconfig"; path = "Target Support Files/Pods-Fringe/Pods-Fringe.release.xcconfig"; sourceTree = "<group>"; };
+		BD5F7D4C2551C8E4006E4DE8 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		BD621CD425484021008B62A9 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		BDC05D392557ADF7006C651B /* FringeEventListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FringeEventListController.swift; sourceTree = "<group>"; };
+		BDC05D4C2557B98E006C651B /* FringeEventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FringeEventCell.swift; sourceTree = "<group>"; };
+		BDC05D512557B9E9006C651B /* FringeEventModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FringeEventModel.swift; sourceTree = "<group>"; };
+		BDC05D552557BB0C006C651B /* FringeEventItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FringeEventItem.swift; sourceTree = "<group>"; };
+		BDC05D582557C590006C651B /* FringeEventDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FringeEventDetailController.swift; sourceTree = "<group>"; };
+		BDC05D682557DDD7006C651B /* BrowseFringeEventsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseFringeEventsController.swift; sourceTree = "<group>"; };
+		BDC05D9D2557E6A0006C651B /* Animator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
+		BDC05D9E2557E6A0006C651B /* Array+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
+		BDC05D9F2557E6A0006C651B /* CGPoint+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+Extensions.swift"; sourceTree = "<group>"; };
+		BDC05DA02557E6A0006C651B /* CGVector+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGVector+Extensions.swift"; sourceTree = "<group>"; };
+		BDC05DA12557E6A0006C651B /* PanGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanGestureRecognizer.swift; sourceTree = "<group>"; };
+		BDC05DA22557E6A0006C651B /* StringUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringUtils.swift; sourceTree = "<group>"; };
+		BDC05DA32557E6A0006C651B /* TapGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapGestureRecognizer.swift; sourceTree = "<group>"; };
+		BDC05DA42557E6A0006C651B /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		BDC05DA62557E6A0006C651B /* CardAnimationOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardAnimationOptions.swift; sourceTree = "<group>"; };
+		BDC05DA72557E6A0006C651B /* CardAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardAnimator.swift; sourceTree = "<group>"; };
+		BDC05DA82557E6A0006C651B /* CardLayoutProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardLayoutProvider.swift; sourceTree = "<group>"; };
+		BDC05DA92557E6A0006C651B /* CardTransformProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTransformProvider.swift; sourceTree = "<group>"; };
+		BDC05DAA2557E6A0006C651B /* SwipeCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeCard.swift; sourceTree = "<group>"; };
+		BDC05DAB2557E6A0006C651B /* SwipeCardDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeCardDelegate.swift; sourceTree = "<group>"; };
+		BDC05DAC2557E6A0006C651B /* SwipeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeView.swift; sourceTree = "<group>"; };
+		BDC05DAE2557E6A0006C651B /* CardStackAnimationOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardStackAnimationOptions.swift; sourceTree = "<group>"; };
+		BDC05DAF2557E6A0006C651B /* CardStackAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardStackAnimator.swift; sourceTree = "<group>"; };
+		BDC05DB02557E6A0006C651B /* CardStackLayoutProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardStackLayoutProvider.swift; sourceTree = "<group>"; };
+		BDC05DB12557E6A0006C651B /* CardStackStateManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardStackStateManager.swift; sourceTree = "<group>"; };
+		BDC05DB22557E6A0006C651B /* CardStackTransformProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardStackTransformProvider.swift; sourceTree = "<group>"; };
+		BDC05DB32557E6A0006C651B /* SwipeCardStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeCardStack.swift; sourceTree = "<group>"; };
+		BDC05DB42557E6A0006C651B /* SwipeCardStackDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeCardStackDataSource.swift; sourceTree = "<group>"; };
+		BDC05DB52557E6A0006C651B /* SwipeCardStackDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeCardStackDelegate.swift; sourceTree = "<group>"; };
+		BDC05DB62557E6A0006C651B /* SwipeDirection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeDirection.swift; sourceTree = "<group>"; };
+		BDC05DB72557E6A0006C651B /* Shuffle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shuffle.h; sourceTree = "<group>"; };
+		BDC05DB82557E6A0006C651B /* Shuffle.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Shuffle.plist; sourceTree = "<group>"; };
+		BDC05DD42557E6DC006C651B /* ButtonStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonStackView.swift; sourceTree = "<group>"; };
+		BDC05DD62557E6DC006C651B /* UIView1+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView1+Extensions.swift"; sourceTree = "<group>"; };
+		BDC05DD82557E6DC006C651B /* TinderCardContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TinderCardContentView.swift; sourceTree = "<group>"; };
+		BDC05DD92557E6DC006C651B /* TinderCardFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TinderCardFooterView.swift; sourceTree = "<group>"; };
+		BDC05DDA2557E6DC006C651B /* TinderCardModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TinderCardModel.swift; sourceTree = "<group>"; };
+		BDC05DDB2557E6DC006C651B /* TinderCardOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TinderCardOverlay.swift; sourceTree = "<group>"; };
+		BDC05DDD2557E6DC006C651B /* TinderButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TinderButton.swift; sourceTree = "<group>"; };
+		BDC05DE92557EAA6006C651B /* TinderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TinderViewController.swift; sourceTree = "<group>"; };
+		BDC05DEE2557F6D2006C651B /* AboutusController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutusController.swift; sourceTree = "<group>"; };
+		BDC05DF82557F7A2006C651B /* VenuesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenuesController.swift; sourceTree = "<group>"; };
+		BDC05DFD2557F879006C651B /* VenuesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenuesModel.swift; sourceTree = "<group>"; };
+		BDC05E012557F8AC006C651B /* VenuesItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenuesItem.swift; sourceTree = "<group>"; };
+		BDC05E1525581066006C651B /* CopywriteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopywriteController.swift; sourceTree = "<group>"; };
+		BDC7E1512545FEF900A268A0 /* Fringe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fringe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDC7E1542545FEF900A268A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BDC7E1582545FEF900A268A0 /* SplashController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashController.swift; sourceTree = "<group>"; };
+		BDC7E15B2545FEF900A268A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BDC7E15D2545FF0600A268A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BDC7E1602545FF0600A268A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BDC7E1622545FF0600A268A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDC7E16B2546AB3200A268A0 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		BDC7E16D2546AB5200A268A0 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		BDC7E1762546BCF500A268A0 /* UIViewController+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+extension.swift"; sourceTree = "<group>"; };
+		EAD90854B5E758C1B857B6E5 /* Pods-Fringe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fringe.debug.xcconfig"; path = "Target Support Files/Pods-Fringe/Pods-Fringe.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BDC7E14E2545FEF900A268A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D7F3ACB3BB289F6CFBBD2BB /* Pods_Fringe.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		49FAAE9A8044DA6B7128C7D0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EAD90854B5E758C1B857B6E5 /* Pods-Fringe.debug.xcconfig */,
+				40AC3CBE1C25A823EEA5FD47 /* Pods-Fringe.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AE7C2B9B9CF26DE2B3B397CE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A4E63FFAAB041B9B43C64C4 /* Pods_Fringe.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BDC05D372557ADC2006C651B /* Fringe */ = {
+			isa = PBXGroup;
+			children = (
+				BDC05D502557B9D7006C651B /* Model */,
+				BDC05D4B2557B97E006C651B /* View */,
+				BDC05D382557ADD6006C651B /* Controller */,
+			);
+			path = Fringe;
+			sourceTree = "<group>";
+		};
+		BDC05D382557ADD6006C651B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BDC05D392557ADF7006C651B /* FringeEventListController.swift */,
+				BDC05D582557C590006C651B /* FringeEventDetailController.swift */,
+				BDC05D682557DDD7006C651B /* BrowseFringeEventsController.swift */,
+				BDC05DE92557EAA6006C651B /* TinderViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BDC05D4B2557B97E006C651B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BDC05D4C2557B98E006C651B /* FringeEventCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BDC05D502557B9D7006C651B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BDC05D512557B9E9006C651B /* FringeEventModel.swift */,
+				BDC05D552557BB0C006C651B /* FringeEventItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BDC05D8D2557E666006C651B /* Tinder */ = {
+			isa = PBXGroup;
+			children = (
+				BDC05DD32557E6C5006C651B /* TinderCard */,
+				BDC05D9A2557E6A0006C651B /* Sources */,
+			);
+			path = Tinder;
+			sourceTree = "<group>";
+		};
+		BDC05D9A2557E6A0006C651B /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				BDC05D9B2557E6A0006C651B /* Shuffle */,
+				BDC05DB72557E6A0006C651B /* Shuffle.h */,
+				BDC05DB82557E6A0006C651B /* Shuffle.plist */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		BDC05D9B2557E6A0006C651B /* Shuffle */ = {
+			isa = PBXGroup;
+			children = (
+				BDC05D9C2557E6A0006C651B /* Internal */,
+				BDC05DA52557E6A0006C651B /* SwipeCard */,
+				BDC05DAD2557E6A0006C651B /* SwipeCardStack */,
+				BDC05DB62557E6A0006C651B /* SwipeDirection.swift */,
+			);
+			path = Shuffle;
+			sourceTree = "<group>";
+		};
+		BDC05D9C2557E6A0006C651B /* Internal */ = {
+			isa = PBXGroup;
+			children = (
+				BDC05D9D2557E6A0006C651B /* Animator.swift */,
+				BDC05D9E2557E6A0006C651B /* Array+Extensions.swift */,
+				BDC05D9F2557E6A0006C651B /* CGPoint+Extensions.swift */,
+				BDC05DA02557E6A0006C651B /* CGVector+Extensions.swift */,
+				BDC05DA12557E6A0006C651B /* PanGestureRecognizer.swift */,
+				BDC05DA22557E6A0006C651B /* StringUtils.swift */,
+				BDC05DA32557E6A0006C651B /* TapGestureRecognizer.swift */,
+				BDC05DA42557E6A0006C651B /* UIView+Extensions.swift */,
+			);
+			path = Internal;
+			sourceTree = "<group>";
+		};
+		BDC05DA52557E6A0006C651B /* SwipeCard */ = {
+			isa = PBXGroup;
+			children = (
+				BDC05DA62557E6A0006C651B /* CardAnimationOptions.swift */,
+				BDC05DA72557E6A0006C651B /* CardAnimator.swift */,
+				BDC05DA82557E6A0006C651B /* CardLayoutProvider.swift */,
+				BDC05DA92557E6A0006C651B /* CardTransformProvider.swift */,
+				BDC05DAA2557E6A0006C651B /* SwipeCard.swift */,
+				BDC05DAB2557E6A0006C651B /* SwipeCardDelegate.swift */,
+				BDC05DAC2557E6A0006C651B /* SwipeView.swift */,
+			);
+			path = SwipeCard;
+			sourceTree = "<group>";
+		};
+		BDC05DAD2557E6A0006C651B /* SwipeCardStack */ = {
+			isa = PBXGroup;
+			children = (
+				BDC05DAE2557E6A0006C651B /* CardStackAnimationOptions.swift */,
+				BDC05DAF2557E6A0006C651B /* CardStackAnimator.swift */,
+				BDC05DB02557E6A0006C651B /* CardStackLayoutProvider.swift */,
+				BDC05DB12557E6A0006C651B /* CardStackStateManager.swift */,
+				BDC05DB22557E6A0006C651B /* CardStackTransformProvider.swift */,
+				BDC05DB32557E6A0006C651B /* SwipeCardStack.swift */,
+				BDC05DB42557E6A0006C651B /* SwipeCardStackDataSource.swift */,
+				BDC05DB52557E6A0006C651B /* SwipeCardStackDelegate.swift */,
+			);
+			path = SwipeCardStack;
+			sourceTree = "<group>";
+		};
+		BDC05DD32557E6C5006C651B /* TinderCard */ = {
+			isa = PBXGroup;
+			children = (
+				BDC05DD42557E6DC006C651B /* ButtonStackView.swift */,
+				BDC05DD52557E6DC006C651B /* Extensions */,
+				BDC05DDD2557E6DC006C651B /* TinderButton.swift */,
+				BDC05DD72557E6DC006C651B /* TinderCard */,
+			);
+			path = TinderCard;
+			sourceTree = "<group>";
+		};
+		BDC05DD52557E6DC006C651B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BDC05DD62557E6DC006C651B /* UIView1+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BDC05DD72557E6DC006C651B /* TinderCard */ = {
+			isa = PBXGroup;
+			children = (
+				BDC05DD82557E6DC006C651B /* TinderCardContentView.swift */,
+				BDC05DD92557E6DC006C651B /* TinderCardFooterView.swift */,
+				BDC05DDA2557E6DC006C651B /* TinderCardModel.swift */,
+				BDC05DDB2557E6DC006C651B /* TinderCardOverlay.swift */,
+			);
+			path = TinderCard;
+			sourceTree = "<group>";
+		};
+		BDC05DEC2557F6BA006C651B /* Aboutus */ = {
+			isa = PBXGroup;
+			children = (
+				BDC05DED2557F6C3006C651B /* Controller */,
+			);
+			path = Aboutus;
+			sourceTree = "<group>";
+		};
+		BDC05DED2557F6C3006C651B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BDC05DEE2557F6D2006C651B /* AboutusController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BDC05DF62557F785006C651B /* Venues */ = {
+			isa = PBXGroup;
+			children = (
+				BDC05DFC2557F866006C651B /* Model */,
+				BDC05DF72557F78C006C651B /* Controller */,
+			);
+			path = Venues;
+			sourceTree = "<group>";
+		};
+		BDC05DF72557F78C006C651B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BDC05DF82557F7A2006C651B /* VenuesController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BDC05DFC2557F866006C651B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BDC05DFD2557F879006C651B /* VenuesModel.swift */,
+				BDC05E012557F8AC006C651B /* VenuesItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BDC05E1225581000006C651B /* Copywrite */ = {
+			isa = PBXGroup;
+			children = (
+				BDC05E1425581050006C651B /* Controller */,
+			);
+			path = Copywrite;
+			sourceTree = "<group>";
+		};
+		BDC05E1425581050006C651B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BDC05E1525581066006C651B /* CopywriteController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BDC7E1482545FEF900A268A0 = {
+			isa = PBXGroup;
+			children = (
+				BDC05D8D2557E666006C651B /* Tinder */,
+				BDC7E1532545FEF900A268A0 /* Fringe */,
+				BDC7E1522545FEF900A268A0 /* Products */,
+				AE7C2B9B9CF26DE2B3B397CE /* Frameworks */,
+				49FAAE9A8044DA6B7128C7D0 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		BDC7E1522545FEF900A268A0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BDC7E1512545FEF900A268A0 /* Fringe.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BDC7E1532545FEF900A268A0 /* Fringe */ = {
+			isa = PBXGroup;
+			children = (
+				BDC05E1225581000006C651B /* Copywrite */,
+				BDC05DF62557F785006C651B /* Venues */,
+				BDC05DEC2557F6BA006C651B /* Aboutus */,
+				BDC05D372557ADC2006C651B /* Fringe */,
+				BDC7E1692546AB1000A268A0 /* Main */,
+				BDC7E1752546BCCE00A268A0 /* extension */,
+				BDC7E1682546AAFC00A268A0 /* Public */,
+				BDC7E1542545FEF900A268A0 /* AppDelegate.swift */,
+				BDC7E1582545FEF900A268A0 /* SplashController.swift */,
+				BDC7E15A2545FEF900A268A0 /* Main.storyboard */,
+				BDC7E15D2545FF0600A268A0 /* Assets.xcassets */,
+				BDC7E15F2545FF0600A268A0 /* LaunchScreen.storyboard */,
+				BDC7E1622545FF0600A268A0 /* Info.plist */,
+			);
+			path = Fringe;
+			sourceTree = "<group>";
+		};
+		BDC7E1682546AAFC00A268A0 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				BDC7E16D2546AB5200A268A0 /* BaseViewController.swift */,
+				BD621CD425484021008B62A9 /* Global.swift */,
+				BD5F7D4C2551C8E4006E4DE8 /* Network.swift */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		BDC7E1692546AB1000A268A0 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				BDC7E16A2546AB1D00A268A0 /* Controller */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		BDC7E16A2546AB1D00A268A0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BDC7E16B2546AB3200A268A0 /* HomeController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BDC7E1752546BCCE00A268A0 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				BDC7E1762546BCF500A268A0 /* UIViewController+extension.swift */,
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BDC7E1502545FEF900A268A0 /* Fringe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDC7E1652545FF0600A268A0 /* Build configuration list for PBXNativeTarget "Fringe" */;
+			buildPhases = (
+				B42AC2F06C0CE5BBC8477180 /* [CP] Check Pods Manifest.lock */,
+				BDC7E14D2545FEF900A268A0 /* Sources */,
+				BDC7E14E2545FEF900A268A0 /* Frameworks */,
+				BDC7E14F2545FEF900A268A0 /* Resources */,
+				9EF8C2C529B6C63E805AAEE8 /* [CP] Embed Pods Frameworks */,
+				FFD6D515F13BB16B2C1F89F9 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Fringe;
+			productName = Knowsys;
+			productReference = BDC7E1512545FEF900A268A0 /* Fringe.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BDC7E1492545FEF900A268A0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1170;
+				LastUpgradeCheck = 1170;
+				ORGANIZATIONNAME = "Robin Hare";
+				TargetAttributes = {
+					BDC7E1502545FEF900A268A0 = {
+						CreatedOnToolsVersion = 11.7;
+					};
+				};
+			};
+			buildConfigurationList = BDC7E14C2545FEF900A268A0 /* Build configuration list for PBXProject "Fringe" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BDC7E1482545FEF900A268A0;
+			productRefGroup = BDC7E1522545FEF900A268A0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BDC7E1502545FEF900A268A0 /* Fringe */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BDC7E14F2545FEF900A268A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDC05DD12557E6A0006C651B /* Shuffle.plist in Resources */,
+				BDC7E1612545FF0600A268A0 /* LaunchScreen.storyboard in Resources */,
+				BDC7E15E2545FF0600A268A0 /* Assets.xcassets in Resources */,
+				BDC7E15C2545FEF900A268A0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9EF8C2C529B6C63E805AAEE8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Fringe/Pods-Fringe-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Fringe/Pods-Fringe-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Fringe/Pods-Fringe-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B42AC2F06C0CE5BBC8477180 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Fringe-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FFD6D515F13BB16B2C1F89F9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Fringe/Pods-Fringe-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Fringe/Pods-Fringe-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Fringe/Pods-Fringe-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BDC7E14D2545FEF900A268A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDC05DC62557E6A0006C651B /* SwipeCardDelegate.swift in Sources */,
+				BDC05DF92557F7A2006C651B /* VenuesController.swift in Sources */,
+				BDC05DC92557E6A0006C651B /* CardStackAnimator.swift in Sources */,
+				BDC05DFE2557F879006C651B /* VenuesModel.swift in Sources */,
+				BDC05DCB2557E6A0006C651B /* CardStackStateManager.swift in Sources */,
+				BDC05DC02557E6A0006C651B /* UIView+Extensions.swift in Sources */,
+				BDC05DE02557E6DC006C651B /* TinderCardContentView.swift in Sources */,
+				BDC05DC12557E6A0006C651B /* CardAnimationOptions.swift in Sources */,
+				BDC05DCA2557E6A0006C651B /* CardStackLayoutProvider.swift in Sources */,
+				BDC7E1772546BCF500A268A0 /* UIViewController+extension.swift in Sources */,
+				BDC05DCD2557E6A0006C651B /* SwipeCardStack.swift in Sources */,
+				BDC05DBA2557E6A0006C651B /* Array+Extensions.swift in Sources */,
+				BDC05DC42557E6A0006C651B /* CardTransformProvider.swift in Sources */,
+				BDC05DD02557E6A0006C651B /* SwipeDirection.swift in Sources */,
+				BDC05DBB2557E6A0006C651B /* CGPoint+Extensions.swift in Sources */,
+				BDC05DC52557E6A0006C651B /* SwipeCard.swift in Sources */,
+				BD5F7D4D2551C8E4006E4DE8 /* Network.swift in Sources */,
+				BDC05DEF2557F6D2006C651B /* AboutusController.swift in Sources */,
+				BDC05E1625581066006C651B /* CopywriteController.swift in Sources */,
+				BDC05D4D2557B98E006C651B /* FringeEventCell.swift in Sources */,
+				BDC05DBC2557E6A0006C651B /* CGVector+Extensions.swift in Sources */,
+				BDC05DEA2557EAA6006C651B /* TinderViewController.swift in Sources */,
+				BDC05D592557C590006C651B /* FringeEventDetailController.swift in Sources */,
+				BDC05D3A2557ADF7006C651B /* FringeEventListController.swift in Sources */,
+				BDC05DE22557E6DC006C651B /* TinderCardModel.swift in Sources */,
+				BDC05DDF2557E6DC006C651B /* UIView1+Extensions.swift in Sources */,
+				BDC05DCC2557E6A0006C651B /* CardStackTransformProvider.swift in Sources */,
+				BDC05DCE2557E6A0006C651B /* SwipeCardStackDataSource.swift in Sources */,
+				BDC05DC82557E6A0006C651B /* CardStackAnimationOptions.swift in Sources */,
+				BDC05DBE2557E6A0006C651B /* StringUtils.swift in Sources */,
+				BDC7E1592545FEF900A268A0 /* SplashController.swift in Sources */,
+				BDC05D692557DDD7006C651B /* BrowseFringeEventsController.swift in Sources */,
+				BDC7E16E2546AB5200A268A0 /* BaseViewController.swift in Sources */,
+				BDC05DDE2557E6DC006C651B /* ButtonStackView.swift in Sources */,
+				BDC05DC72557E6A0006C651B /* SwipeView.swift in Sources */,
+				BDC05DC32557E6A0006C651B /* CardLayoutProvider.swift in Sources */,
+				BDC05DE52557E6DC006C651B /* TinderButton.swift in Sources */,
+				BDC05DE32557E6DC006C651B /* TinderCardOverlay.swift in Sources */,
+				BDC05DE12557E6DC006C651B /* TinderCardFooterView.swift in Sources */,
+				BDC05DC22557E6A0006C651B /* CardAnimator.swift in Sources */,
+				BDC7E1552545FEF900A268A0 /* AppDelegate.swift in Sources */,
+				BDC05D562557BB0C006C651B /* FringeEventItem.swift in Sources */,
+				BDC05DBD2557E6A0006C651B /* PanGestureRecognizer.swift in Sources */,
+				BDC7E16C2546AB3200A268A0 /* HomeController.swift in Sources */,
+				BD621CD525484021008B62A9 /* Global.swift in Sources */,
+				BDC05DBF2557E6A0006C651B /* TapGestureRecognizer.swift in Sources */,
+				BDC05DB92557E6A0006C651B /* Animator.swift in Sources */,
+				BDC05E022557F8AC006C651B /* VenuesItem.swift in Sources */,
+				BDC05DCF2557E6A0006C651B /* SwipeCardStackDelegate.swift in Sources */,
+				BDC05D522557B9E9006C651B /* FringeEventModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BDC7E15A2545FEF900A268A0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BDC7E15B2545FEF900A268A0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BDC7E15F2545FF0600A268A0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BDC7E1602545FF0600A268A0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BDC7E1632545FF0600A268A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BDC7E1642545FF0600A268A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BDC7E1662545FF0600A268A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAD90854B5E758C1B857B6E5 /* Pods-Fringe.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UFW5AVLNG8;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = Fringe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fringe.adelaide.assignment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BDC7E1672545FF0600A268A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40AC3CBE1C25A823EEA5FD47 /* Pods-Fringe.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = UFW5AVLNG8;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = Fringe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fringe.adelaide.assignment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BDC7E14C2545FEF900A268A0 /* Build configuration list for PBXProject "Fringe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDC7E1632545FF0600A268A0 /* Debug */,
+				BDC7E1642545FF0600A268A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDC7E1652545FF0600A268A0 /* Build configuration list for PBXNativeTarget "Fringe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDC7E1662545FF0600A268A0 /* Debug */,
+				BDC7E1672545FF0600A268A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BDC7E1492545FEF900A268A0 /* Project object */;
+}
